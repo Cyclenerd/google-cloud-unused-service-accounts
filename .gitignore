@@ -1,0 +1,11 @@
+.DS_Store
+*.db
+*.sql
+*.csv
+*.xls
+*.xlsx
+serviceaccounts/**
+keys/**
+!create.sql
+!select.sql
+.~*
