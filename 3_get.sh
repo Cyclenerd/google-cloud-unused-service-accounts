@@ -69,8 +69,7 @@ while IFS=',' read -r MY_SERVICE_ACCOUNT_ID MY_LAST_AUTH_TIME || [[ -n "$MY_LAST
 	if gcloud iam service-accounts keys list --quiet \
 	--iam-account="$MY_SERVICE_ACCOUNT_ID" \
 	--format="json" > "$DIR_KEYS/$MY_SERVICE_ACCOUNT_ID.json"; then
-		perl "copy.pl" "$DIR_KEYS/$MY_SERVICE_ACCOUNT_ID.json" "$MY_DB" && \
-		echo "[OK] Keys retrieved and copied successfully."
+		perl "copy.pl" "$DIR_KEYS/$MY_SERVICE_ACCOUNT_ID.json" "$MY_DB" || exit 9
 	else
 		echo "[!!] Cannot get keys!"
 		MY_WARNING=1

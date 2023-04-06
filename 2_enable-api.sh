@@ -31,6 +31,7 @@ while IFS=',' read -r MY_PROJECT_ID MY_PROJECT_NUMBER || [[ -n "$MY_PROJECT_NUMB
 		echo "[!!] Could not activate service!"
 		MY_WARNING=1
 	fi
+	echo
 done <"$CSV_PROJECTS"
 
 echo
