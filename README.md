@@ -48,6 +48,9 @@ More than one user managed key (CSV column: `userManaged`) is not a good idea.
 A Bash shell, Perl, SQLite and a few other tools that are included in many standard GNU/Linux distributions.
 In addition, you need the Google Cloud CLI `gcloud` which is very easy to install.
 
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/Cyclenerd/google-cloud-unused-service-accounts)
+
+
 <details>
 <summary><b>Linux (Debian/Ubuntu/Cloud Shell)</b></summary>
 
