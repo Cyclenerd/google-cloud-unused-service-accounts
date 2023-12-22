@@ -1,11 +1,11 @@
 # Detect unused Service Accounts
 
-[![Bagde: Google Cloud](https://img.shields.io/badge/Google%20Cloud-%234285F4.svg?logo=google-cloud&logoColor=white)](#readme)
-[![Bagde: Linux](https://img.shields.io/badge/Linux-FCC624.svg?logo=linux&logoColor=black)](#readme)
-[![Bagde: macOS](https://img.shields.io/badge/macOS-000000.svg?logo=apple&logoColor=white)](#readme)
-[![Bagde: Windows](https://img.shields.io/badge/Windows-008080.svg?logo=windows95&logoColor=white)](#readme)
-[![Bagde: CI](https://github.com/Cyclenerd/google-cloud-unused-service-accounts/actions/workflows/ci.yml/badge.svg)](https://github.com/Cyclenerd/google-cloud-unused-service-accounts/actions/workflows/ci.yml)
-[![Bagde: GitHub](https://img.shields.io/github/license/cyclenerd/google-cloud-unused-service-accounts)](https://github.com/Cyclenerd/google-cloud-unused-service-accounts/blob/master/LICENSE)
+[![Badge: Google Cloud](https://img.shields.io/badge/Google%20Cloud-%234285F4.svg?logo=google-cloud&logoColor=white)](#readme)
+[![Badge: Linux](https://img.shields.io/badge/Linux-FCC624.svg?logo=linux&logoColor=black)](#readme)
+[![Badge: macOS](https://img.shields.io/badge/macOS-000000.svg?logo=apple&logoColor=white)](#readme)
+[![Badge: Windows](https://img.shields.io/badge/Windows-008080.svg?logo=windows95&logoColor=white)](#readme)
+[![Badge: CI](https://github.com/Cyclenerd/google-cloud-unused-service-accounts/actions/workflows/ci.yml/badge.svg)](https://github.com/Cyclenerd/google-cloud-unused-service-accounts/actions/workflows/ci.yml)
+[![Badge: GitHub](https://img.shields.io/github/license/cyclenerd/google-cloud-unused-service-accounts)](https://github.com/Cyclenerd/google-cloud-unused-service-accounts/blob/master/LICENSE)
 
 
 Collection of Bash and Perl scripts that work together with the
