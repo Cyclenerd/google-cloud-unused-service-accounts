@@ -14,39 +14,12 @@ to detect unused Service Accounts (SA) or Service Account Keys (SAK)
 in large Google Cloud organizations with many projects.
 Tested and used within Google Cloud organizations of [DAX](https://en.wikipedia.org/wiki/DAX) companies.
 
-## Usage
-
-1. **Create list with projects:**
-    ```shell
-    bash 1_projects.sh
-    ```
-    All projects to which the user has access are saved to `projects.csv`.
-    The CSV list can be adjusted manually.
-    These projects will be used in the next steps.
-1. **Enable "Policy Analyzer" API:**
-    ```shell
-    bash 2_enable-api.sh
-    ```
-1. **Get SA and SAK authentications:**
-    ```shell
-    bash 3_get.sh
-    ```
-1. **Create overview for evaluation:**
-    ```shell
-    bash 4_query.sh
-    ```
-    CSV export `auth.csv` is created.
-    You can import this file into your favorite spreadsheet program.
-
-A few evaluation tips:
-
-Service account keys could pose a security risk if compromised.
-More than one user managed key (CSV column: `userManaged`) is not a good idea.
-
 ## Requirement
 
 A Bash shell, Perl, SQLite and a few other tools that are included in many standard GNU/Linux distributions.
 In addition, you need the Google Cloud CLI `gcloud` which is very easy to install.
+
+[![Open in Cloud Shell](https://gstatic.com/cloudssh/images/open-btn.png)](https://shell.cloud.google.com/cloudshell/open?shellonly=true&ephemeral=false&cloudshell_git_repo=https://github.com/Cyclenerd/google-cloud-unused-service-accounts&cloudshell_git_branch=master&cloudshell_tutorial=README.md)
 
 [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/Cyclenerd/google-cloud-unused-service-accounts)
 
@@ -101,6 +74,35 @@ Install these [Cygwin](https://www.cygwin.com/) packages:
 Install Google Cloud CLI `gcloud` following these instructions: <https://cloud.google.com/sdk/docs/install>
 
 </details>
+
+## Usage
+
+1. **Create list with projects:**
+    ```shell
+    bash 1_projects.sh
+    ```
+    All projects to which the user has access are saved to `projects.csv`.
+    The CSV list can be adjusted manually.
+    These projects will be used in the next steps.
+1. **Enable "Policy Analyzer" API:**
+    ```shell
+    bash 2_enable-api.sh
+    ```
+1. **Get SA and SAK authentications:**
+    ```shell
+    bash 3_get.sh
+    ```
+1. **Create overview for evaluation:**
+    ```shell
+    bash 4_query.sh
+    ```
+    CSV export `auth.csv` is created.
+    You can import this file into your favorite spreadsheet program.
+
+A few evaluation tips:
+
+Service account keys could pose a security risk if compromised.
+More than one user managed key (CSV column: `userManaged`) is not a good idea.
 
 
 ## License
